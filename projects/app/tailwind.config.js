@@ -7,7 +7,11 @@ module.exports = {
   ],
   mode: "jit",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bebas: "'Bebas Neue', cursive",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

@@ -1,13 +1,13 @@
 import anime from "animejs";
 import { useEffect } from "react";
-const range = [-4, 4];
+const range = [-4, 2];
 
 export const HeroBackGround = () => {
   const anime1 = () =>
     anime({
       targets: ".path-1",
       translateX: () => anime.random(range[0], range[1]),
-      translateY: () => anime.random(range[0], range[1]),
+      translateY: () => anime.random(range[0] / 4, range[1] / 4),
       scale: () => anime.random(1, 1.5),
       rotate: anime.random(-45, 45),
       easing: "easeInOutQuad",
@@ -18,7 +18,7 @@ export const HeroBackGround = () => {
     anime({
       targets: ".path-2",
       translateX: () => anime.random(range[0], range[1]),
-      translateY: () => anime.random(range[0], range[1]),
+      translateY: () => anime.random(range[0] / 4, range[1] / 4),
       scale: () => anime.random(1, 1.5),
       rotate: anime.random(-45, 45),
       easing: "easeInOutQuad",
@@ -37,8 +37,8 @@ export const HeroBackGround = () => {
       fill="none"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute inset-0 z-10 w-full h-full"
-      preserveAspectRatio="xMinYMin slice"
+      className="absolute inset-0 -z-10 w-full h-full"
+      preserveAspectRatio="xMinYMid slice"
     >
       <mask
         id="mask__marble"

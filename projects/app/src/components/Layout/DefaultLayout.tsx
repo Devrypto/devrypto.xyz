@@ -16,11 +16,11 @@ export const Header = () => {
   return (
     <div className="fixed z-10 justify-between w-full bg-transparent navbar">
       <NextLink href="/">
-        <a className="text-xl normal-case btn btn-ghost drawer-button text-neutral-content">
+        <a className="text-xl text-white normal-case btn btn-ghost drawer-button">
           Devrypto
         </a>
       </NextLink>
-      <button className="btn btn-square btn-ghost text-neutral-content">
+      <button className="text-white btn btn-square btn-ghost">
         <AiOutlineMenu size="2rem" />
       </button>
     </div>
